@@ -9,10 +9,17 @@ public class Main {
 
 Fish fish1=new Fish(true,"malkov",true);
         System.out.println(" Под водой дышат? *"+fish1.underwaterBreathing+"* ");
+
 Eagle orel1=new Eagle(5);
 Eagle orel2=new Eagle(10);
+Eagle vorobey=new Eagle(true," ",2," ",2,true);
+
+        System.out.println(vorobey.isBeatiful + " " + vorobey.type);
 
         Сow cow1=new Сow(false,"Тигр",4,false);
+        Сow cow3=new Сow(true," vse est", 4,false,true);
+        System.out.println("Test " +cow3.horns+ " " + cow3.hoof+" ");
+
         Сow ww2=new Сow(6,true);
 
         System.out.println(shark1.getSmellOfBlood());
