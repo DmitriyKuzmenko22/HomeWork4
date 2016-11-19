@@ -1,32 +1,31 @@
 package com.company;
 
+public class Eagle extends Bird {
 
-public class Animal {
-
-    private boolean vegetarian;
-    private String eats;
-    private int noOfLegs;
-
-    public Animal(){
+    private Eagle(){
 
     }
 
+    int lengthWings;
+ boolean isBeatiful;
 
-    public Animal(boolean vegetarian, String eats, int noOfLegs) {
-        this.vegetarian = vegetarian;
-        this.eats = eats;
-        this.noOfLegs = noOfLegs;
+    public Eagle(boolean vegetarian, String eats, int noOfLegs, String type, int lengthWings, boolean isBeatiful) {
+        super(vegetarian, eats, noOfLegs, type);
+        this.lengthWings = lengthWings;
+        this.isBeatiful = isBeatiful;
     }
 
-    protected boolean isVegetarian(){
-        return vegetarian;
+    public Eagle(int lengthWings, boolean isBeatiful) {
+        this.lengthWings = lengthWings;
+        this.isBeatiful = isBeatiful;
     }
 
-    protected String getEats(){
-        return eats;
+    protected Eagle(int lengthWings) {
+        this.lengthWings=lengthWings;
     }
 
-    protected int getNoOfLegs(){
-        return noOfLegs;
+
+    public String getEagle() {
+        return "* Какая длина крыльев? *" +lengthWings+ ".м*";
     }
 }
