@@ -3,9 +3,16 @@ package com.company;
 
 public class Shark extends Fish {
     boolean smellOfBlood;
-
+boolean isBeautiful;
+    
     private Shark(){
 
+    }
+
+    public Shark(boolean vegetarian, String eats, boolean underwaterBreathing, boolean smellOfBlood, boolean isBeautiful) {
+        super(vegetarian, eats, underwaterBreathing);
+        this.smellOfBlood = smellOfBlood;
+        this.isBeautiful = isBeautiful;
     }
 
     public Shark(boolean smellOfBlood) {
